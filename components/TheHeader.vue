@@ -1,19 +1,20 @@
 <template>
 	<header>
 		<nav class="navbar navbar-expand-lg bg-light">
-			<div class="container">
-				<a class="navbar-brand" href="#">NuxtJS</a>
+			<a class="navbar-brand" href="#">NuxtJS</a>
 
-				<div class="collapse navbar-collapse">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Users</a>
-						</li>
-					</ul>
-				</div>
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<nuxt-link class="nav-link" to="/">Home</nuxt-link>
+					</li>
+					<li class="nav-item">
+						<nuxt-link class="nav-link" to="/users">Users</nuxt-link>
+					</li>
+					<li class="nav-item">
+						<nuxt-link class="nav-link" to="/about">About</nuxt-link>
+					</li>
+				</ul>
 			</div>
 		</nav>
 	</header>
