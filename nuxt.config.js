@@ -15,7 +15,13 @@ export default {
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
 		]
 	},
-
+	// Modifying the default loader
+	loading: { 
+		color: 'DodgerBlue',
+		height: '10px',
+		continuous: true,
+		duration: 3000
+	},
 	// Global CSS: https://go.nuxtjs.dev/config-css
 	css: [
 		'@/node_modules/bootstrap/dist/css/bootstrap.min.css'
@@ -31,12 +37,15 @@ export default {
 	// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 	buildModules: [
 		// https://go.nuxtjs.dev/eslint
-		'@nuxtjs/eslint-module'
+		// '@nuxtjs/eslint-module'
 	],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
+		'@nuxtjs/axios'
 	],
+
+	axios: {},
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {
