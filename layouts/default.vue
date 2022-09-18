@@ -13,6 +13,7 @@
 import TheHeader from '@/components/TheHeader'
 
 export default {
+	name: "default",
 	components: {
 		TheHeader
 	}
